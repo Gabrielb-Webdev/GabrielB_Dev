@@ -37,11 +37,17 @@ h5.subtitle.is-5.has-text-white.custom-bg{
     color: white;
 }
 
+.red{
+    background-color: #e21e80;
+}
+
 .big {
   font-size: 5rem;
   line-height: 0.9;
   background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 80%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 95%;
 }
