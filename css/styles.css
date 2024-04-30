@@ -1,8 +1,99 @@
+body {
+  font-family: "Jersey 25", sans-serif;
+  font-style: normal;
+}
+
+.navbar-item,
+.navbarBasicExample{
+    user-select: none;
+}
+
+a.navbar-item:hover{
+    background-color: unset;
+}
+
+.navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover{
+background-color: unset;
+}
+
+.custom-bg {
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+    border-radius: 10px;
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    text-align: center; /* Centrar el texto horizontalmente */
+    width: 50%;
+}
+
+h5.subtitle.is-5.has-text-white.custom-bg{
+    font-weight: 100;
+}
+
+.section {
+  margin-top: 100px; /* Puedes ajustar este valor según sea necesario */
+}
+
+.blue{
+    background-color: #1e30f3;
+    color: white;
+}
+
+.big {
+  font-size: 5rem;
+  line-height: 0.9;
+  background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 95%;
+}
+
+.subtitle.is-2{
+    line-height: 2;
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.button {
+  width: 45%;
+  padding: 10px 0px;
+  font-size: 1.9rem;
+}
+
+.centered-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    height: 100%; /* Para que ocupe toda la altura del contenedor */
+}
+
+@media (min-width: 1400px) {
+    .custom-bg{
+        width: 42.5%;
+    }
+}
+
+@media (min-width: 1600px ) {
+    .custom-bg{
+        width: 37.5%;
+    }
+}
+
 /* Estilos para dispositivos de escritorio y laptops */
 @media (min-width: 1024px) {
   body {
     padding-left: 15%;
     padding-right: 15%;
+  }
+
+  .navbar{
+    height: 6.5rem;
   }
 }
 
