@@ -1,0 +1,15 @@
+/* Estilos para dispositivos de escritorio y laptops */
+@media (min-width: 1024px) {
+  body {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}
+
+/* Estilos para tablets y dispositivos móviles */
+@media (max-width: 1023px) {
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/ico" sizes="32x32" href="img/icon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>GabrielB_Dev - Home</title>
 </head>
@@ -12,6 +13,36 @@
 
 <body>
     <!-- navbar -->
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <img src="sources/logo.webp" alt="Logo">
+            </a>
+
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div id="navbarBasicExample" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="#">
+                    Home
+                </a>
+
+                <a class="navbar-item" href="#">
+                    About
+                </a>
+
+                <a class="navbar-item" href="#">
+                    Contact
+                </a>
+            </div>
+        </div>
+    </nav>
 
     <!-- JavaScript para la funcionalidad del menú móvil -->
     <script src="js/scripts.js"></script>
