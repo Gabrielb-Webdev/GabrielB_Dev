@@ -76,7 +76,7 @@
   }
 }
 
-.about-me {
+.fadeInUp {
   opacity: 0; /* Inicialmente, el elemento está completamente oculto */
   animation: fadeInUp 1.5s ease-out forwards; /* Ajusta la duración y la función de temporización según tus preferencias */
 }
