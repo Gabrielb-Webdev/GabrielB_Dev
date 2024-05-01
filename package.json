@@ -28,13 +28,14 @@
   "bugs": {
     "url": "https://github.com/jgthms/bulma/issues"
   },
-  "dependencies": {
-    "sass": "^1.71.1"
-  },
   "devDependencies": {
     "cssnano": "^6.1.0",
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "node-sass": "^9.0.0",
     "postcss-cli": "^11.0.0",
-    "prettier": "^3.2.5"
+    "prettier": "^3.2.5",
+    "sass": "^1.76.0"
   },
   "scripts": {
     "build-bulma": "sass --style=expanded --source-map bulma.scss css/bulma.css",
@@ -57,5 +58,8 @@
     "bulma.scss",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "dependencies": {
+    "bulma": "^0.9.0"
+  }
 }

@@ -107,6 +107,25 @@ h5.subtitle.is-5.has-text-white.custom-bg{
     margin: 36px -45px 45px 0px;
 }
 
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.float-up-down {
+  animation-name: floatUpDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
 @media (min-width: 1400px) {
     .custom-bg{
         width: 42.5%;
