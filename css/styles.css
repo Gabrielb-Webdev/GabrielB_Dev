@@ -123,7 +123,7 @@ h3.subtitle{
   letter-spacing: 1.2px;
 }
 
-h1.title {
+.about-me h1 {
     font-size: 4em; /* Ajusta el tamaño del título según tus preferencias */
     background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
     -webkit-background-clip: text;
@@ -138,8 +138,15 @@ h1.title {
     --bulma-card-shadow: 5px;
 }
 
-.pulse.icons-s{
- margin-left: 30px;
+.pulse.icons-s {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.no-margin{
+  margin-top: 10px;
 }
 
 @media (min-width: 1400px) {
