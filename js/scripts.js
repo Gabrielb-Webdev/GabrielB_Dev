@@ -44,19 +44,21 @@
  });
     
 // modal 1
-     // Obtén una referencia al botón "Ver más" y al modal
-    var openModalButton = document.getElementById('openModalButton1');
-    var modal = document.getElementById('myModal1');
+// Obtén una referencia al botón "Ver más" y al modal
+var openModalButton = document.getElementById('openModalButton1');
+var modal = document.getElementById('myModal1');
 
-    // Agrega un event listener al botón para abrir el modal cuando se hace clic
-    openModalButton.addEventListener('click', function() {
-        modal.classList.add('is-active'); // Añade la clase 'is-active' para mostrar el modal
-    });
+// Agrega un event listener al botón para abrir el modal cuando se hace clic
+openModalButton.addEventListener('click', function() {
+    modal.classList.add('is-active'); // Añade la clase 'is-active' para mostrar el modal
+    document.documentElement.classList.add('no-scroll'); // Bloquea el scroll vertical en el html
+});
 
-    // Agrega un event listener al botón de cierre del modal para cerrarlo cuando se hace clic
-    modal.querySelector('.modal-close').addEventListener('click', function() {
-        modal.classList.remove('is-active'); // Quita la clase 'is-active' para ocultar el modal
-    });
+// Agrega un event listener al botón de cierre del modal para cerrarlo cuando se hace clic
+modal.querySelector('.modal-close').addEventListener('click', function() {
+    modal.classList.remove('is-active'); // Quita la clase 'is-active' para ocultar el modal
+    document.documentElement.classList.remove('no-scroll'); // Habilita el scroll vertical en el html
+});
     
 // modal 2
      // Obtén una referencia al botón "Ver más" y al modal
