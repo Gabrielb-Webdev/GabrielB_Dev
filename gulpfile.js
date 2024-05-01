@@ -3,7 +3,7 @@ const sass = require('gulp-sass')(require('sass'));
 
 // Tarea para compilar el archivo skeleton.scss
 gulp.task('compile-sass', function () {
-    return gulp.src('sass/base/skeleton.scss') // Ruta al archivo skeleton.scss
+    return gulp.src('sass/base/animations.scss') // Ruta al archivo skeleton.scss
         .pipe(sass().on('error', sass.logError)) // Compilar Sass
         .pipe(gulp.dest('css')); // Directorio de destino para el CSS compilado
 });

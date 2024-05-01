@@ -11,3 +11,10 @@
             navbarMenu.classList.toggle('is-active');
         });
     });
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.animated-element').forEach(function (elem) {
+    elem.classList.add('once');
+  });
+});

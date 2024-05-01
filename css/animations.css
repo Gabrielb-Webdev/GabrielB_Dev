@@ -1,0 +1,47 @@
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+@keyframes pulsate {
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Define la animación */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Aplica la animación al elemento */
+.animated-text {
+  animation: slideInFromLeft 1s ease-in-out; /* ajusta la duración y la función de tiempo según tu preferencia */
+}
+
+/* Define la animación */
+@keyframes slideInFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Aplica la animación al elemento */
+.animated-content {
+  animation: slideInFromBottom 1s ease-in-out; /* ajusta la duración y la función de tiempo según tu preferencia */
+}
