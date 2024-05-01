@@ -45,3 +45,54 @@
 .animated-content {
   animation: slideInFromBottom 1s ease-in-out; /* ajusta la duración y la función de tiempo según tu preferencia */
 }
+
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+.float-up-down {
+  animation-name: floatUpDown;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Ajusta la distancia del desplazamiento según tus preferencias */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-me {
+  opacity: 0; /* Inicialmente, el elemento está completamente oculto */
+  animation: fadeInUp 1.5s ease-out forwards; /* Ajusta la duración y la función de temporización según tus preferencias */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Ajusta el factor de escala según tus preferencias */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite; /* Ajusta la duración y la repetición según tus preferencias */
+}

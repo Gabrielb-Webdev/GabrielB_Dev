@@ -107,23 +107,29 @@ h5.subtitle.is-5.has-text-white.custom-bg{
     margin: 36px -45px 45px 0px;
 }
 
-@keyframes floatUpDown {
-  0% {
-    transform: translateY(-5px);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(-5px);
-  }
+.social-icons a i {
+    font-size: 50px; /* Ajusta el tamaño de los iconos según tus preferencias */
+    margin-right: 20px; /* Agrega separación entre los iconos */
+    padding: 10px; /* Ajusta el espacio interior para que los iconos tengan un aspecto más grande */
+    border-radius: 50%; /* Da a los iconos una forma circular */
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    background-clip: text; /* Para compatibilidad con otros navegadores */
+    -webkit-text-fill-color: transparent;
 }
 
-.float-up-down {
-  animation-name: floatUpDown;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+h3.subtitle{
+  font-weight: 100;
+  letter-spacing: 1.2px;
+}
+
+h1.title {
+    font-size: 4em; /* Ajusta el tamaño del título según tus preferencias */
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    background-clip: text; /* Propiedad estándar */
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
 }
 
 @media (min-width: 1400px) {
