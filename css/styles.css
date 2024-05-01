@@ -30,6 +30,7 @@ h5.subtitle.is-5.has-text-white.custom-bg{
 
 .section {
   margin-top: 75px; /* Puedes ajustar este valor según sea necesario */
+  user-select: none;
 }
 
 .blue{
@@ -164,8 +165,8 @@ h3.subtitle{
 /* Estilos para dispositivos de escritorio y laptops */
 @media (min-width: 1024px) {
   body {
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .navbar{
