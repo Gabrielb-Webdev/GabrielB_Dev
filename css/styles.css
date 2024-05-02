@@ -168,6 +168,10 @@ h3.subtitle{
 }
 
 #myModal1 .swiper-container,
+#myModal3 .swiper-container,
+#myModal4 .swiper-container,
+#myModal5 .swiper-container,
+#myModal6 .swiper-container,
 #myModal2 .swiper-container
  {
     width: 100%; /* Establece el ancho al 100% */
@@ -175,12 +179,20 @@ h3.subtitle{
 }
 
 #myModal1 .swiper-wrapper,
+#myModal3 .swiper-wrapper,
+#myModal4 .swiper-wrapper,
+#myModal5 .swiper-wrapper,
+#myModal6 .swiper-wrapper,
 #myModal2 .swiper-wrapper
  {
     display: flex; /* Utiliza el modelo de caja flexible para los slides */
 }
 
 #myModal1 .swiper-slide,
+#myModal3 .swiper-slide,
+#myModal4 .swiper-slide,
+#myModal5 .swiper-slide,
+#myModal6 .swiper-slide,
 #myModal2 .swiper-slide
  {
     flex-shrink: 0; /* Evita que los slides se contraigan para ajustarse */
