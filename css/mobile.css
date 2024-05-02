@@ -67,4 +67,20 @@ width: 15px !important;
   html, body {
     overflow-x: hidden !important;
   }
+
+  .subtitle.is-2{
+    font-size: 1.5rem;
+    }
+
+    .big{
+        font-size: 2.5rem;
+    }
+
+    .mobile img{
+        top: 7.5% !important;
+    }
+
+    .c-buttom{
+        font-size: 1rem;
+    }
 }
