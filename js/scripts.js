@@ -247,8 +247,6 @@ prevEl: '.swiper-button-prev',
 },
 });
 
-
-
 function contactMe() {
 // Obtener el modal
 var modal = document.getElementById('myModal1');
