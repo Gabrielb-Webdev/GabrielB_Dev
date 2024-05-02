@@ -186,23 +186,26 @@ document.addEventListener('DOMContentLoaded', function() {
             // Obtener el valor del atributo data-target
             const target = button.getAttribute('data-target');
 
-            // Obtener la posición vertical de la sección objetivo
-            let targetPosition;
-            if (target === "proyectos") {
-                targetPosition = document.getElementById(target).offsetTop - 80; // Resta 100 píxeles
-            } else {
-                targetPosition = document.getElementById(target).offsetTop - 50; // Resta 50 píxeles
-            }
+            // Verificar si el elemento objetivo existe en el DOM
+            const targetElement = document.getElementById(target);
+            if (targetElement) {
+                // Obtener la posición vertical de la sección objetivo
+                let targetPosition;
+                if (target === "proyectos") {
+                    targetPosition = targetElement.offsetTop - 80; // Resta 80 píxeles
+                } else {
+                    targetPosition = targetElement.offsetTop - 50; // Resta 50 píxeles
+                }
 
-            // Desplazarse suavemente hasta la sección objetivo
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
+                // Desplazarse suavemente hasta la sección objetivo
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
         });
     });
 });
-
 
 document.addEventListener('DOMContentLoaded', function() {
     // Obtener el elemento del encabezado
