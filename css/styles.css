@@ -167,16 +167,22 @@ h3.subtitle{
     font-weight: 100;
 }
 
-#myModal1 .swiper-container {
+#myModal1 .swiper-container,
+#myModal2 .swiper-container
+ {
     width: 100%; /* Establece el ancho al 100% */
     overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
-#myModal1 .swiper-wrapper {
+#myModal1 .swiper-wrapper,
+#myModal2 .swiper-wrapper
+ {
     display: flex; /* Utiliza el modelo de caja flexible para los slides */
 }
 
-#myModal1 .swiper-slide {
+#myModal1 .swiper-slide,
+#myModal2 .swiper-slide
+ {
     flex-shrink: 0; /* Evita que los slides se contraigan para ajustarse */
     width: 100%; /* Establece el ancho de cada slide al 100% */
 }
@@ -185,16 +191,11 @@ h3.subtitle{
     /* Estilos generales */
     border: none;
     border-radius: 4px;
-    padding: 8px 16px;
+    padding: 14px 28px; /* Ajusta el padding para hacer los botones un poco más grandes */
     cursor: pointer;
-    font-size: 14px;
-    /* Otros estilos personalizados según tus preferencias */
-}
-
-.custom-button:hover {
-    /* Estilos al pasar el mouse */
-    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
-    /* Otros estilos al pasar el mouse */
+    font-size: 16px; /* Tamaño de fuente */
+    text-transform: uppercase; /* Convertir texto a mayúsculas */
+    margin-right: 20px; /* Ajusta el espacio entre los botones */
 }
 
 .custom-button.link-button {
@@ -203,7 +204,7 @@ h3.subtitle{
 
 .custom-button.link-button:hover {
     background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
-    /* Otros estilos al pasar el mouse */
+    /* Estilos al pasar el mouse */
 }
 
 .custom-button.contact-button {
@@ -212,7 +213,7 @@ h3.subtitle{
 
 .custom-button.contact-button:hover {
     background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
-    /* Otros estilos al pasar el mouse */
+    /* Estilos al pasar el mouse */
 }
 
 @media (min-width: 1400px) {
