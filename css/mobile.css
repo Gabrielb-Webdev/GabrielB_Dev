@@ -88,7 +88,17 @@ width: 15px !important;
 
 @media (max-width: 1200px) {
       section#sobre-mi,
-      section#proyectos {
+      section#proyectos,
+      section#inicio {
         margin-top: 7.5% !important;
     }
+
+    .has-text-centered.c-buttoms{
+        display: flex;
+    }
+
+    .custom-button{
+        font-size: 0.9rem;
+    }
 }
+
