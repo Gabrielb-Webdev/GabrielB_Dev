@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobile.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,34 +57,30 @@
 
     <!-- Bienvenido -->
     <section id="inicio" class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-6 animated-text">
-                    <!-- Contenido de la parte izquierda -->
-                    <div class="content" style="margin-top: 50px;">
-                        <h5 class="subtitle is-5 has-text-white custom-bg top-content">Diseño · Desarrollo</h5>
-                        <h4 class="subtitle is-2 has-text-grey-light">Puedo ayudar a tu negocio a</h4>
-                        <p class="big">Estar en línea y crecer rápidamente</p>
-                        <div class="button-container float-up-down">
-                            <!-- Agregar la clase 'float-up-down' para aplicar la animación -->
-                            <button class="blue button is-primary animated-text" data-target="sobre-mi">Sobre
-                                Mí</button>
-                            <button class="red button is-danger animated-text"
-                                data-target="proyectos">Proyectos</button>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="columns">
+            <!-- Contenido de la parte izquierda -->
+        <div class="column is-6 animated-text" style="display: flex; justify-content: center;">
+            <div class="content" style="margin-top: 50px;">
+                <h5 class="subtitle is-5 has-text-white custom-bg top-content">Diseño · Desarrollo</h5>
+                <h4 class="subtitle is-2 has-text-grey-light">Puedo ayudar a tu negocio a</h4>
+                <p class="big">Estar en línea y crecer rápidamente</p>
+                <div class="button-container float-up-down">
+                    <!-- Agregar la clase 'float-up-down' para aplicar la animación -->
+                    <button class="blue button is-primary animated-text" data-target="sobre-mi">Sobre Mí</button>
+                    <button class="red button is-danger animated-text" data-target="proyectos">Proyectos</button>
                 </div>
-                <div class="column">
-                    <!-- Contenido de la parte derecha -->
-                    <div class="content has-text-centered animated-content">
-                        <!-- Aquí puedes agregar el contenido para la parte derecha -->
-                        <div class="centered-content"
-                            style="background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); width: 600px; height: 600px; border-radius: 50px; position: relative;">
-                            <!-- Imagen -->
-                            <div class="image-container" style="width: 100%; height: 100%; padding: 20px;">
-                                <img src="sources/foto_mia.webp" alt="Mi foto"
-                                    style="width: 100%; height: 100%; object-fit: contain; border-radius: 50px; position: relative; top: 3.5%;">
-                            </div>
+            </div>
+        </div>
+
+            <!-- Contenido de la parte derecha -->
+            <div class="column is-6 has-text-centered animated-content">
+                <div class="centered-content"
+                    style="background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%); width: 600px; height: 600px; border-radius: 50px; position: relative;">
+                    <div class="image-container" style="width: 100%; height: 100%; padding: 20px;">
+                        <img src="sources/foto_mia.webp" alt="Mi foto"
+                            style="width: 100%; height: 100%; object-fit: contain; border-radius: 50px; position: relative; top: 3.5%;">
+                    </div>
                             <!-- dots-1 -->
                             <div class="dots-1">
                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
