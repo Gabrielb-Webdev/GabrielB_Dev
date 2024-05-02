@@ -243,10 +243,10 @@ h3.subtitle{
 
 /* Estilos para dispositivos de escritorio y laptops */
 @media (min-width: 1024px) {
-  body {
+  /* body {
     padding-left: 10%;
     padding-right: 10%;
-  }
+  } */
 
   .navbar{
     height: 6.5rem;
@@ -259,9 +259,9 @@ h3.subtitle{
 
 /* Estilos para tablets y dispositivos móviles */
 @media (max-width: 1023px) {
-  body {
+  /* body {
     padding-left: 5%;
     padding-right: 5%;
-  }
+  } */
 }
 
