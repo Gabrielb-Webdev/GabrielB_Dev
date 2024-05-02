@@ -167,19 +167,48 @@ h3.subtitle{
     font-weight: 100;
 }
 
-/*  */
-
-/*  */
-
-#myModal1 .modal-content {
-    width: 80%; /* Ajusta el ancho del contenido del modal */
-    height: 80%; /* Ajusta la altura del contenido del modal */
-    overflow-y: auto; /* Agrega desplazamiento vertical si el contenido excede la altura */
+#myModal1 .swiper-container {
+    width: 100%; /* Establece el ancho al 100% */
+    overflow: hidden; /* Oculta el contenido que se desborda */
 }
 
-#myModal1 .modal {
-    width: 100%; /* Ajusta el ancho del modal */
-    height: 100%; /* Ajusta la altura del modal */
+#myModal1 .swiper-wrapper {
+    display: flex; /* Utiliza el modelo de caja flexible para los slides */
+}
+
+#myModal1 .swiper-slide {
+    flex-shrink: 0; /* Evita que los slides se contraigan para ajustarse */
+    width: 100%; /* Establece el ancho de cada slide al 100% */
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+}
+
+.custom-button.is-primary {
+    background-color: #1e30f3;
+    color: #ffffff;
+}
+
+.custom-button.is-info {
+    background-color: #e21e80;
+    color: #ffffff;
+}
+
+.custom-button:hover {
+    background-color: #4a9eff;
 }
 
 @media (min-width: 1400px) {

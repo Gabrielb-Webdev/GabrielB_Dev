@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/bulma.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,10 +16,6 @@
     <!-- Asegúrate de incluir jQuery antes de Slick Carousel -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
-
 
     <title>GabrielB_Dev</title>
 </head>
@@ -800,20 +795,30 @@
         <div class="modal-content">
             <!-- Contenido de tu modal aquí -->
             <div class="box">
-                <h1 class="title is-4 has-text-centered">Pixiu X</h1> <!-- Cambiado a "Pixiu X" y centrado -->
-                    <div class="container xcentered">
-                        <div id="carousel-wrapper" class="xcentered is-flex">
-                            <div id="left" class="is-flex has-text-centered arrows"><span class="icon"><i
-                                        class="fa fa-arrow-circle-left"></i></span></div>
-                            <div id="nav-div" class="is-flex">
-                                <ul id="nav" class="is-flex">
-                                </ul>
-                            </div>
-                            <div id="right" class="is-flex has-text-centered arrows"><span class="icon"><i
-                                        class="fa fa-arrow-circle-right"></i></span></div>
-                        </div>
+                <h1 class="title is-4 has-text-centered">Pixiu X</h1> <!-- Título centrado -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/Pixiux/first.png" alt="Imagen 1"></div>
+                        <div class="swiper-slide"><img src="img/Pixiux/second.png" alt="Imagen 2"></div>
+                        <div class="swiper-slide"><img src="img/Pixiux/third.png" alt="Imagen 3"></div>
+                        <div class="swiper-slide"><img src="img/Pixiux/fourth.png" alt="Imagen 3"></div>
                     </div>
-                <p class="has-text-centered" style="font-size: 1.5rem;">Desarrollé y diseñé la página web Pixiu X para un cliente, creando una plataforma de comercio electrónico versátil que ofrece una amplia gama de productos, desde productos de belleza hasta juguetes para mascotas. Mi responsabilidad consistió en crear un diseño web atractivo y funcional que permitiera a los usuarios explorar y adquirir diversos artículos de manera conveniente. Gestioné todo el proceso de desarrollo web, desde la planificación inicial hasta la implementación final, asegurándome de que la página web ofreciera una experiencia de compra eficiente y satisfactoria, independientemente de la categoría de productos que los clientes estuvieran buscando.</p> <!-- Centrado -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+
+                <p class="has-text-justify">Desarrollé y diseñé la página web Pixiu X para un cliente, creando una
+                    plataforma de comercio electrónico versátil que
+                    ofrece una amplia gama de productos, desde productos de belleza hasta juguetes para mascotas. Mi
+                    responsabilidad
+                    consistió en crear un diseño web atractivo y funcional que permitiera a los usuarios explorar y
+                    adquirir diversos
+                    artículos de manera conveniente. Gestioné todo el proceso de desarrollo web, desde la planificación
+                    inicial hasta la
+                    implementación final, asegurándome de que la página web ofreciera una experiencia de compra
+                    eficiente y satisfactoria,
+                    independientemente de la categoría de productos que los clientes estuvieran buscando.
+                </p> <!-- Párrafo centrado -->
             </div>
         </div>
         <button class="modal-close is-large" aria-label="close"></button>
@@ -981,7 +986,6 @@
 
     <!-- JavaScript para la funcionalidad del menú móvil -->
     <script src="js/scripts.js"></script>
-    <script src="js/main.js"></script>
     <!-- Asegúrate de incluir jQuery antes de Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Incluye Swiper JS -->
