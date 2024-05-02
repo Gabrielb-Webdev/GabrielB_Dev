@@ -1,13 +1,64 @@
-    @media screen and (max-width: 1400px) {
-        .columns {
-            flex-direction: column !important;
-        }
+@media screen and (max-width: 1400px) {
+.columns {
+flex-direction: column !important;
+}
 
-        .column {
-            width: 100% !important;
-        }
+.column {
+width: 100% !important;
+}
 
-        .column:not(:first-child) {
-            margin-top: 20px !important;
-        }
+.column:not(:first-child) {
+margin-top: 20px !important;
+}
+
+.center-c{
+margin-top: 50px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+p.big {
+text-align: center;
+}
+
+.mobile{
+height: 300px !important;
+width: 300px !important;
+}
+
+.dots-1 svg,
+.dots-2 svg,
+.dots-3 svg,
+.dots-4 svg
+{
+width: 15px !important;
+}
+
+.dots-1{
+    left: 15px;
+}
+
+.dots-4{
+    right: 25px;
+}
+}
+
+/* Estilos para dispositivos de hasta 600px de ancho */
+@media (max-width: 600px) {
+    .field.is-grouped {
+        flex-direction: column; /* Cambiar la dirección del flexbox a columna */
     }
+
+    .field.is-grouped .control {
+        width: 100%; /* Establecer el ancho al 100% para que ocupe todo el espacio disponible */
+        margin-bottom: 10px; /* Agregar un margen inferior para separar los elementos */
+    }
+
+    .field.is-grouped .select {
+        width: 100%; /* Establecer el ancho al 100% para que ocupe todo el espacio disponible */
+    }
+
+    .field.is-grouped .control .input {
+        width: 100%; /* Establecer el ancho al 100% para que ocupe todo el espacio disponible */
+    }
+}
