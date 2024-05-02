@@ -249,10 +249,20 @@ prevEl: '.swiper-button-prev',
 
 function contactMe() {
 // Obtener el modal
-var modal = document.getElementById('myModal1');
+var modal1 = document.getElementById('myModal1');
+var modal2 = document.getElementById('myModal2');
+var modal3 = document.getElementById('myModal3');
+var modal4 = document.getElementById('myModal4');
+var modal5 = document.getElementById('myModal5');
+var modal6 = document.getElementById('myModal6');
 
-// Quitar la clase 'is-active' para ocultar el modal
-modal.classList.remove('is-active');
+// Quitar la clase 'is-active' para ocultar el modal1
+modal1.classList.remove('is-active');
+modal2.classList.remove('is-active');
+modal3.classList.remove('is-active');
+modal4.classList.remove('is-active');
+modal5.classList.remove('is-active');
+modal6.classList.remove('is-active');
 
 // Habilitar el scroll vertical en el html
 document.documentElement.classList.remove('no-scroll');
