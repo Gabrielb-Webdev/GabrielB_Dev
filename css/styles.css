@@ -211,6 +211,31 @@ h3.subtitle{
     background-color: #4a9eff;
 }
 
+.contact-button {
+    background-color: #e21e80;
+}
+
+.contact-button:hover {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+}
+/* Estilos para el botón "Contáctame" */
+.contact-button {
+background-color: #e21e80;
+}
+
+.contact-button:hover {
+background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+}
+
+/* Estilos para el botón de enlace */
+.link-button {
+background-color: #1e30f3;
+}
+
+.link-button:hover {
+background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+}
+
 @media (min-width: 1400px) {
     .custom-bg{
         width: 42.5%;
