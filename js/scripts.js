@@ -146,3 +146,96 @@ modal6.querySelector('.modal-close').addEventListener('click', function() {
     document.documentElement.classList.remove('no-scroll'); // Habilita el scroll vertical en el html
 });
     
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener todos los elementos del menú de navegación
+    const navbarItems = document.querySelectorAll('.navbar-item');
+
+    // Iterar sobre cada elemento del menú de navegación
+    navbarItems.forEach(function(navbarItem) {
+        // Agregar un event listener para el clic en cada elemento
+        navbarItem.addEventListener('click', function(event) {
+            // Prevenir el comportamiento predeterminado de los enlaces
+            event.preventDefault();
+
+            // Obtener el valor del atributo data-target
+            const target = navbarItem.getAttribute('data-target');
+
+            // Obtener la posición vertical de la sección objetivo
+            const targetPosition = document.getElementById(target).offsetTop - 50; // Resta 50 píxeles
+
+            // Desplazarse suavemente hasta la sección objetivo
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener todos los botones
+    const buttons = document.querySelectorAll('.button');
+
+    // Iterar sobre cada botón
+    buttons.forEach(function(button) {
+        // Agregar un event listener para el clic en cada botón
+        button.addEventListener('click', function(event) {
+            // Prevenir el comportamiento predeterminado del botón
+            event.preventDefault();
+
+            // Obtener el valor del atributo data-target
+            const target = button.getAttribute('data-target');
+
+            // Obtener la posición vertical de la sección objetivo
+            let targetPosition;
+            if (target === "proyectos") {
+                targetPosition = document.getElementById(target).offsetTop - 80; // Resta 100 píxeles
+            } else {
+                targetPosition = document.getElementById(target).offsetTop - 50; // Resta 50 píxeles
+            }
+
+            // Desplazarse suavemente hasta la sección objetivo
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Obtener el elemento del encabezado
+    var topContent = document.querySelector('.top-content');
+    // Obtener la barra de navegación
+    var navbar = document.querySelector('.navbar');
+
+    // Función para manejar el desplazamiento de la barra de navegación
+    function handleNavbarScroll() {
+        // Verifica si el elemento del encabezado ya no es visible
+        if (isOutOfViewport(topContent)) {
+            navbar.classList.remove('is-hidden-touch'); // Muestra la barra de navegación
+        } else {
+            navbar.classList.add('is-hidden-touch'); // Oculta la barra de navegación
+        }
+    }
+
+    // Función para verificar si el elemento ya no es visible en la pantalla
+    function isOutOfViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= window.innerHeight ||
+            rect.left >= window.innerWidth ||
+            rect.bottom <= 0 ||
+            rect.right <= 0
+        );
+    }
+
+    // Agrega un event listener para detectar el scroll de la página
+    window.addEventListener('scroll', function() {
+        handleNavbarScroll(); // Llama a la función para manejar el desplazamiento de la barra de navegación
+    });
+
+    // Llama a la función al cargar la página para manejar el estado inicial de la barra de navegación
+    handleNavbarScroll();
+});

@@ -29,7 +29,7 @@ h5.subtitle.is-5.has-text-white.custom-bg{
 }
 
 .section {
-  margin-top: 75px; /* Puedes ajustar este valor según sea necesario */
+  margin-top: 150px; /* Puedes ajustar este valor según sea necesario */
   user-select: none;
 }
 
@@ -156,6 +156,29 @@ h3.subtitle{
     overflow-y: hidden;
 }
 
+.gradient-text {
+    background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* Propiedad estándar para compatibilidad */
+    color: transparent; /* Propiedad estándar para compatibilidad */
+    font-size: 3rem;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+
+#myModal1 .modal-content {
+    width: 80%; /* Ajusta el ancho del contenido del modal */
+    height: 80%; /* Ajusta la altura del contenido del modal */
+    overflow-y: auto; /* Agrega desplazamiento vertical si el contenido excede la altura */
+}
+
+#myModal1 .modal {
+    width: 100%; /* Ajusta el ancho del modal */
+    height: 100%; /* Ajusta la altura del modal */
+}
+
 @media (min-width: 1400px) {
     .custom-bg{
         width: 42.5%;
@@ -178,6 +201,10 @@ h3.subtitle{
   .navbar{
     height: 6.5rem;
   }
+  .navbar.is-fixed-top {
+    top: 0;
+    padding: 0 10% 0 10%;
+}
 }
 
 /* Estilos para tablets y dispositivos móviles */
@@ -187,3 +214,4 @@ h3.subtitle{
     padding-right: 5%;
   }
 }
+

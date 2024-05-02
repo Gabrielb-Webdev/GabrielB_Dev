@@ -22,7 +22,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav id="inicio" class="navbar is-fixed-top is-hidden-touch" role="navigation" aria-label="main navigation">
         <div class="navbar-brand is-flex is-align-items-center">
             <a class="navbar-item" href="index.html">
                 <img src="sources/logo.webp" alt="Logo" style="max-height: 50px;">
@@ -39,15 +39,15 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-end">
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="#" data-target="inicio">
                     Inicio
                 </a>
 
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="#" data-target="sobre-mi">
                     Sobre Mi
                 </a>
 
-                <a class="navbar-item" href="#">
+                <a class="navbar-item" href="#" data-target="contacto">
                     Contacto
                 </a>
             </div>
@@ -55,23 +55,23 @@
     </nav>
 
     <!-- Bienvenido -->
-    <section class="section">
+    <section id="inicio" class="section">
         <div class="container">
             <div class="columns">
                 <div class="column is-6 animated-text">
                     <!-- Contenido de la parte izquierda -->
                     <div class="content" style="margin-top: 50px;">
-                        <h5 class="subtitle is-5 has-text-white custom-bg">Diseño · Desarrollo</h5>
+                        <h5 class="subtitle is-5 has-text-white custom-bg top-content">Diseño · Desarrollo</h5>
                         <h4 class="subtitle is-2 has-text-grey-light">Puedo ayudar a tu negocio a</h4>
                         <p class="big">Estar en línea y crecer rápidamente</p>
                         <div class="button-container float-up-down">
                             <!-- Agregar la clase 'float-up-down' para aplicar la animación -->
-                            <button class="blue button is-primary animated-text">Currículum</button>
-                            <button class="red button is-danger animated-text">Proyectos</button>
+                            <button class="blue button is-primary animated-text" data-target="sobre-mi">Sobre
+                                Mí</button>
+                            <button class="red button is-danger animated-text" data-target="proyectos">Proyectos</button>
                         </div>
                     </div>
                 </div>
-
                 <div class="column">
                     <!-- Contenido de la parte derecha -->
                     <div class="content has-text-centered animated-content">
@@ -523,7 +523,7 @@
     </section>
 
     <!-- Sobre Mi -->
-    <section class="section about-me fadeInUp">
+    <section id="sobre-mi" class="section about-me fadeInUp">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-three-quarters">
@@ -675,13 +675,16 @@
     </section>
 
     <!-- Proyectos -->
-    <section class="section">
+    <section id="proyectos" class="section">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-10-desktop is-12-tablet">
                     <div class="card">
                         <header class="card-header is-centered">
-                            <p class="card-header-title" style="justify-content: center;">Proyectos</p>
+                            <p class="card-header-title gradient-text"
+                                style="justify-content: center; font-size: 3rem; letter-spacing: 3px; font-weight: 100;">
+                                Proyectos</p>
+
                         </header>
                         <div class="card-content">
                             <div class="swiper-container">
@@ -867,7 +870,7 @@
 
 
     <!-- Contacto -->
-    <section class="section no-margin">
+    <section id="contacto" class="section no-margin">
         <div class="container">
             <div class="columns is-centered">
                 <!-- Formulario de contacto -->
