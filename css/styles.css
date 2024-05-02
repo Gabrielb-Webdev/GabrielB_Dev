@@ -229,6 +229,15 @@ h3.subtitle{
     /* Estilos al pasar el mouse */
 }
 
+section#sobre-mi,
+section#proyectos{
+    margin-top: 0px;
+}
+
+.social-icons.fadeInUp{
+    margin-top: 80px;
+}
+
 @media (min-width: 1400px) {
     .custom-bg{
         width: 42.5%;

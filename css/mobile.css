@@ -105,3 +105,60 @@ width: 15px !important;
     }
 }
 
+/* Estilos del footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer .content {
+    margin-top: 20px;
+}
+
+.footer-title {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-social {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-social li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.footer-social-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social-link:hover {
+    text-decoration: underline;
+}
+
+    @media screen and (max-width: 600px) {
+        /* Clase personalizada para centrar las columnas de izquierda a derecha */
+        .center-columns {
+            display: flex;
+            justify-content: center;
+        }
+    }
