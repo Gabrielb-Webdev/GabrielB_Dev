@@ -84,3 +84,11 @@ width: 15px !important;
         font-size: 1rem;
     }
 }
+
+
+@media (max-width: 1200px) {
+      section#sobre-mi,
+      section#proyectos {
+        margin-top: 7.5% !important;
+    }
+}
