@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     // Obtener todos los botones
-    const buttons = document.querySelectorAll('.button');
+    const buttons = document.querySelectorAll('.button-c');
 
     // Iterar sobre cada botón
     buttons.forEach(function (button) {
@@ -246,7 +246,7 @@ var swiper = new Swiper('.swiper-container', {
     },
 });
 
-function contactMe() {
+function formulario() {
     // Obtener el modal
     var modal1 = document.getElementById('myModal1');
     var modal2 = document.getElementById('myModal2');
