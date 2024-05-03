@@ -1419,36 +1419,64 @@
                         <h2 class="title"
                             style="color: gray; text-align: center; letter-spacing: 2px; font-weight: 100; font-size: 25px;">
                             Trabajemos juntos.</h2>
-                            <form method="POST" name="contact" onsubmit="return validateForm()"><input type="hidden" name="form-name" value="contact">
-                                <!-- Name input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" name="name" type="text" placeholder="Enter your name..." required="">
-                                    <label for="name">Full name</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            <form name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true" onsubmit="return validateForm()" netlify>
+                                <div class="field">
+                                    <div class="control">
+                                        <input type="hidden" name="form-name" value="contact">
+                                        <input class="input" type="text" placeholder="Nombre y apellido" name="Name" required>
+                                    </div>
                                 </div>
-                                <!-- Email address input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" name="email" type="email" placeholder="name@example.com" required="">
-                                    <label for="email">Email address</label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input" type="email" placeholder="Correo electrónico" name="email" required>
+                                    </div>
                                 </div>
-                                <!-- Phone number input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" name="tel" type="tel" placeholder="(123) 456-7890">
-                                    <label for="phone">Phone number</label>
-                                    <div class="invalid-feedback">A phone number is required.</div>
+                                <div class="field is-grouped">
+                                    <div class="control">
+                                        <div class="select">
+                                            <select name="CountryCode[]">
+                                            <option>+54 (Argentina)</option>
+                                            <option>+591 (Bolivia)</option>
+                                            <option>+56 (Chile)</option>
+                                            <option>+57 (Colombia)</option>
+                                            <option>+506 (Costa Rica)</option>
+                                            <option>+53 (Cuba)</option>
+                                            <option>+593 (Ecuador)</option>
+                                            <option>+503 (El Salvador)</option>
+                                            <option>+34 (España)</option>
+                                            <option>+1 (Estados Unidos)</option>
+                                            <option>+502 (Guatemala)</option>
+                                            <option>+504 (Honduras)</option>
+                                            <option>+52 (México)</option>
+                                            <option>+505 (Nicaragua)</option>
+                                            <option>+507 (Panamá)</option>
+                                            <option>+595 (Paraguay)</option>
+                                            <option>+51 (Perú)</option>
+                                            <option>+1 (Puerto Rico)</option>
+                                            <option>+1 (República Dominicana)</option>
+                                            <option>+598 (Uruguay)</option>
+                                            <option>+58 (Venezuela)</option>
+
+                                            <!-- Agrega más opciones según sea necesario -->
+                                        </select>
+                                    </div>
                                 </div>
-                                <!-- Message input-->
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required" required=""></textarea>
-                                    <label for="message">Message</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                <div class="control">
+                                    <input class="input" type="tel" placeholder="Número de teléfono" name="Phone" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
                                 </div>
-                                <!-- Submit Button-->
-                                <div class="d-grid">
-                                    <button class="btn btn-primary btn-lg" id="submitButton" type="submit" disabled="">Submit</button>
+                                
+                            </div>
+                            <div class="field">
+                                <div class="control">
+                                    <textarea class="textarea" placeholder="Mensaje" name="message" required></textarea>
                                 </div>
-                            </form>
+                            </div>
+                            <div class="field">
+                                <div class="control has-text-centered">
+                                    <button class="button is-link" type="submit" style="background: -webkit-linear-gradient(315deg, #1e30f3 0%, #e21e80 100%);">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
