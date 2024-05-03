@@ -242,6 +242,10 @@ section#proyectos{
     font-family: "Montserrat", sans-serif;
 }
 
+.FF{
+    font-family: "Montserrat", sans-serif;
+}
+
 @media (min-width: 1400px) {
     .custom-bg{
         width: 42.5%;
