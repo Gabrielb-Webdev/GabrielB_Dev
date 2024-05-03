@@ -114,3 +114,11 @@
     }
 
 }
+
+@media (max-width: 800px ) {
+    .circles {
+        top: 125%;
+        height: 305%;
+    }
+    
+}
