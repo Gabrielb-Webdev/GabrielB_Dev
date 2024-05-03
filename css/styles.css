@@ -2,7 +2,6 @@ body {
     font-family: "Jaro", sans-serif;
     font-style: normal;
     background-color: #14161a;
-    color: #14161a;
 }
 
 .navbar-item,
@@ -252,14 +251,6 @@ section#proyectos{
     .custom-bg{
         width: 42.5%;
     }
-}
-
-navbar{
-    background-color: #14161a;
-}
-
-.card{
-    background-color: #14161a;
 }
 
 @media (min-width: 1600px ) {
