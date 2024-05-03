@@ -1422,7 +1422,7 @@
                             <form name="contacto" method="POST" data-netlify="true" data-netlify-recaptcha="true" netlify>
                                 <div class="field">
                                     <div class="control">
-                                        <input class="input" type="text" placeholder="Nombre y apellido" name="nombre" required>
+                                        <input class="input" type="text" placeholder="Nombre y apellido" name="Name" required>
                                     </div>
                                 </div>
                                 <div class="field">
@@ -1433,7 +1433,7 @@
                                 <div class="field is-grouped">
                                     <div class="control">
                                         <div class="select">
-                                            <select name="pais">
+                                            <select name="CountryCode[]">
                                             <option>+54 (Argentina)</option>
                                             <option>+591 (Bolivia)</option>
                                             <option>+56 (Chile)</option>
@@ -1461,13 +1461,13 @@
                                     </div>
                                 </div>
                                 <div class="control">
-                                    <input class="input" type="tel" placeholder="Número de teléfono" name="telefono" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
+                                    <input class="input" type="tel" placeholder="Número de teléfono" name="Phone" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
                                 </div>
                                 
                             </div>
                             <div class="field">
                                 <div class="control">
-                                    <textarea class="textarea" placeholder="Mensaje" name="mensaje" required></textarea>
+                                    <textarea class="textarea" placeholder="Mensaje" name="message" required></textarea>
                                 </div>
                             </div>
                             <div class="field">
