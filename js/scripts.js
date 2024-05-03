@@ -276,42 +276,26 @@ function formulario() {
     });
 }
 
-var nameField = document.forms["contact"]["name"];
-var emailField = document.forms["contact"]["email"];
-var messageField = document.forms["contact"]["message"];
-var ccarea = document.forms["contact"]["CountryCode[]"];
-var number = document.forms["contact"]["Phone"];
-var submitButton = document.getElementById("submitButton");
+document.addEventListener('DOMContentLoaded', function () {
+    var contactForm = document.getElementById('contactForm');
 
-function validateForm() {
-    if (nameField.value === "" || emailField.value === "" || messageField.value === "" || ccareaField.value === "" || numberField.value === "") {
-        alert("All fields must be filled out.");
-        return false;
-    }
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Evitar la recarga de la página
 
-    // Validación adicional, por ejemplo, el formato de correo electrónico.
-    // Puedes agregar más validaciones aquí.
+        var formData = new FormData(contactForm);
 
-    // Redirigir a index.html después de 3 segundos
-    setTimeout(function() {
-        window.location.href = "../index.html";
-    }, 3000);
-
-    return true;
-}
-
-// Habilitar o deshabilitar el botón de envío en tiempo real
-nameField.addEventListener("input", enableSubmitButton);
-emailField.addEventListener("input", enableSubmitButton);
-messageField.addEventListener("input", enableSubmitButton);
-ccarea.addEventListener("option", enableSubmitButton);
-number.addEventListener("input", enableSubmitButton);
-
-function enableSubmitButton() {
-    if (nameField.value !== "" && emailField.value !== "" && messageField.value !== "" && ccareaField.value !== "" && numberField.value !== "") {
-        submitButton.disabled = false;
-    } else {
-        submitButton.disabled = true;
-    }
-}
-
+        fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: new URLSearchParams(formData).toString()
+        })
+        .then(function () {
+            // Si el envío fue exitoso, puedes hacer algo aquí, como mostrar un mensaje de confirmación
+            console.log('Formulario enviado correctamente');
+        })
+        .catch(function (error) {
+            // Si hay algún error en el envío, puedes manejarlo aquí
+            console.error('Error al enviar el formulario:', error);
+        });
+    });
+});
