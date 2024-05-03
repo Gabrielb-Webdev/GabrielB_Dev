@@ -1,22 +1,7 @@
 body {
     font-family: "Jaro", sans-serif;
     font-style: normal;
-    /* background-color: #14161a; */
 }
-
-/* Estilos para el tema oscuro */
-.dark-theme {
-    background-color: #14161a;
-    color: #fff;
-}
-
-/* Modificar las variables de color de Bulma para el tema oscuro */
-.dark-theme {
-    --primary: #00d1b2;
-    --info: #209cee;
-    /* Agrega otras variables que necesites modificar */
-}
-
 
 .navbar-item,
 .navbarBasicExample{
