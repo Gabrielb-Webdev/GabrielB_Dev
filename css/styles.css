@@ -254,6 +254,14 @@ section#proyectos{
     }
 }
 
+navbar{
+    background-color: #14161a;
+}
+
+.card{
+    background-color: #14161a;
+}
+
 @media (min-width: 1600px ) {
     .custom-bg{
         width: 37.5%;
