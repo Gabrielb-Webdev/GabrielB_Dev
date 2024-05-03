@@ -1,6 +1,8 @@
 body {
     font-family: "Jaro", sans-serif;
     font-style: normal;
+    background-color: #14161a;
+    color: #fff;
 }
 
 .navbar-item,
