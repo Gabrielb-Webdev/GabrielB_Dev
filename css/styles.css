@@ -1,5 +1,5 @@
 body {
-font-family: "Jaro", sans-serif;
+    font-family: "Jaro", sans-serif;
     font-style: normal;
 }
 
@@ -236,6 +236,10 @@ section#proyectos{
 
 .social-icons.fadeInUp{
     margin-top: 80px;
+}
+
+.navbar-menu{
+    font-family: "Montserrat", sans-serif;
 }
 
 @media (min-width: 1400px) {
