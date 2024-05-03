@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(function () {
             // Si el envío fue exitoso, mostrar un mensaje de alerta
             alert('¡Formulario enviado correctamente!');
+            // Recargar la página
+            window.location.reload();
         })
         .catch(function (error) {
             // Si hay algún error en el envío, mostrar un mensaje de alerta con el error
