@@ -1460,8 +1460,9 @@
                                     </div>
                                 </div>
                                 <div class="control">
-                                    <input class="input" type="tel" placeholder="Número de teléfono" name="telefono">
+                                    <input class="input" type="tel" placeholder="Número de teléfono" name="telefono" oninput="this.value = this.value.replace(/[^0-9]/g, '')" required>
                                 </div>
+                                
                             </div>
                             <div class="field">
                                 <div class="control">
