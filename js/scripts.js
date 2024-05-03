@@ -304,7 +304,7 @@ function validateForm() {
 nameField.addEventListener("input", enableSubmitButton);
 emailField.addEventListener("input", enableSubmitButton);
 messageField.addEventListener("input", enableSubmitButton);
-ccarea.addEventListener("input", enableSubmitButton);
+ccarea.addEventListener("option", enableSubmitButton);
 number.addEventListener("input", enableSubmitButton);
 
 function enableSubmitButton() {
