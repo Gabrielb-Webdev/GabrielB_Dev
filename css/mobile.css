@@ -95,13 +95,14 @@ width: 15px !important;
 
     .has-text-centered.c-buttoms{
         display: flex;
+        justify-content: space-between;
     }
 
     .custom-button{
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         color: white;
-        /* margin-left: 15px;
-        margin-right: 0; */
+        margin-right: 0;
+        padding: 8px 28px;
     }
 }
 
