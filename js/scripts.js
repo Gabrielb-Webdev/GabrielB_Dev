@@ -290,12 +290,12 @@ document.addEventListener('DOMContentLoaded', function () {
             body: new URLSearchParams(formData).toString()
         })
         .then(function () {
-            // Si el envío fue exitoso, puedes hacer algo aquí, como mostrar un mensaje de confirmación
-            console.log('Formulario enviado correctamente');
+            // Si el envío fue exitoso, mostrar un mensaje de alerta
+            alert('¡Formulario enviado correctamente!');
         })
         .catch(function (error) {
-            // Si hay algún error en el envío, puedes manejarlo aquí
-            console.error('Error al enviar el formulario:', error);
+            // Si hay algún error en el envío, mostrar un mensaje de alerta con el error
+            alert('Error al enviar el formulario: ' + error);
         });
     });
 });
